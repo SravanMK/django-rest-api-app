@@ -51,6 +51,8 @@ urlpatterns = [
     # url('app/', include(router.urls)),
     path('app/', include('OurStock.urls')),
 
+
+
     # url(r'^api-auth/', include('rest_framework.urls', namespace='rest_framework'))
 ]
 
