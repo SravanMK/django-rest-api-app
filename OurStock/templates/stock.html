@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>List Of Stocks</title>
+    <style>
+.FormStyle {
+        text-align:center;
+        color:white;
+
+
+      }
+
+.Header1{
+        text-align:center;
+        color:white;
+        font-size:15px;
+        }
+
+.Box    {
+        text-align: center;
+        background-color:#79ba43;
+        width:500px;
+        height:800px;
+        display : block;
+        margin : auto
+        }
+
+.header {
+        text-align: center;
+        }
+
+.form {
+        height: 30px;
+        width: 200px;
+        display:block;
+        margin:auto;
+
+        }
+.formsize {
+        height: 30px;
+        width: 200px;
+        }
+
+
+
+    </style>
+
+</head>
+<body>
+
+   <div class="Box">
+       <div class="header"><br><br><br>
+       <p1 class="Header1">Get Free Stocks Updates!</p1><br>
+    <p2 class="Header1">Join Us For FREE To Get Instant Updates</p2><br><br><br><br><br><br>
+       </div>
+       <div class="form">
+
+            <form class="FormStyle" method="post" >
+                {% csrf_token %}
+                {{ form }}
+            <input  type="submit"  value="Add" class="formsize">
+            </form>
+        </div>
+   </div>
+
+    </form>
+
+
+</body>
+</html>
